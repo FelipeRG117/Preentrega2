@@ -1,16 +1,6 @@
-/*colores*/
-$margin: green; 
-
-
-/*cards*/
-
-.#($margin)-card{
-    border: 2px solid $margin:
-}
-.card{
-    border: 5px solid $margin;
-}
-
-
-
-/* barras separacion*/
+$margin: rgba(58, 2, 187, 0.637);  
+$brand: 'tmb';
+$barras: yellow; 
+$secondary: red;  
+$dark: black;
+$dark-opacity: rgba($dark, 0.4);
