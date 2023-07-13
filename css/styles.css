@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(145, 219, 219);
+}
+
+main .tmb-card2 {
+  width: 250px;
+  padding: 0;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: red;
+}
+main .tmb-card2 img {
+  width: 100%;
+  height: 150px;
+  display: block;
+}
+main .tmb-card2_body {
+  height: 50px;
+  text-align: center;
+  background: red;
+  line-height: 50px;
+}
+main .tmb-card2 h5 {
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */
