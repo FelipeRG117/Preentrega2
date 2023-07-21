@@ -1,0 +1,39 @@
+.barra-1 {
+    background: black;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    ul {
+        float: right;
+        margin-right: 20px;
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+        a {
+            color: rgb(255, 255, 255);
+            font-family: "Poppins", sans-serif;
+            font-weight: 200;
+            padding: 13px;
+            border-radius: 6px;
+            text-decoration: none;
+            text-transform: uppercase;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+
+            &:hover {
+                color: rgb(0, 0, 0);
+                background-color: rgb(207, 76, 142);
+            }
+        }
+    }
+}

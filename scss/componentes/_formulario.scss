@@ -1,0 +1,54 @@
+/* Estilos del Cuadro de Texto */
+.cuadro-formulario {
+    background: #FEAC5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 40px 0;
+  }
+  
+  .cuadro-formulario .cuadro-texto {
+    text-align: center;
+    margin-bottom: 30px;
+  
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 15px;
+    }
+  
+    p {
+      font-size: 16px;
+      color: var(--black);
+    }
+  }
+  
+  .cuadro-formulario .formulario {
+    max-width: 600px;
+    margin: 0 auto;
+  
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+      .form-label {
+        font-weight: 700;
+        color: var(--black);
+      }
+  
+      .form-control {
+        margin-bottom: 15px;
+      }
+  
+      .btn-primary {
+        background-color: var(--green);
+        border-color: var(--green);
+        font-weight: 700;
+        &:hover {
+          background-color: var(--green-light);
+        }
+      }
+    }
+  }

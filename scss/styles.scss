@@ -1,29 +1,29 @@
+/* Estilos abstract */
+@import 'abstract/variables'; // Importa variables
+@import 'abstract/buttons'; // Importa buttons
+@import 'abstract/maps'; // Importa maps
 
-/*abstract*/
 
-@import 'abstract/variables';
 
-/*componentes*/
 
-@import'componentes/main',
-'componentes/cards';
 
-body{
-    background-color: black;
-    
-}
-%btn{
-    height: 40px;
-    min-width: 100px;
-    border: none;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    color: #ffff;
-    font-size: 16px;
-    margin: 5px 0;
-    box-shadow: 2px 2px 6px 2px rgba(0,0,0,0.2);
-    
-}
+
+
+
+/* Estilos del Header */
+@import 'componentes/header';
+
+/* Estilos de cards */
+@import 'componentes/cards';
+
+/* Estilos del formulario */
+@import 'componentes/formulario';
+
+/* Estilos de section */
+@import 'componentes/section';
+
+/* Estilos del main */
+@import 'componentes/main';
+
+/* Estilos del Pie de Página */
+@import 'componentes/footer';

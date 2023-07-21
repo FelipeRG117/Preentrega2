@@ -1,35 +1,39 @@
-  /* card en main*/
-  body{
-    background-color: black;
+ /* Estilos del Carrusel */
+.main {
+    padding: 20px;
+  
+    .carousel-container {
+        width: 100%;
+        height: 500px; /* Modificación para que el carrusel tenga una altura de 500px */
+        overflow: hidden;
+        position: relative;
+  
+        .carousel-inner {
+            width: 100%;
+            height: 100%;
+  
+            .carousel-item {
+                display: flex; /* Usamos flexbox para centrar verticalmente las imágenes */
+                align-items: center; /* Centramos verticalmente las imágenes */
+                justify-content: center; /* Centramos horizontalmente las imágenes */
+                position: absolute; /* Ajustamos la posición de las imágenes */
+                top: 0;
+                left: 0;
+                opacity: 0; /* Ocultamos inicialmente todas las imágenes del carrusel */
+                transition: opacity 0.5s ease; /* Agregamos una transición para que el cambio de imagen sea suave */
+  
+                &.active {
+                    opacity: 1; /* Mostramos solo la imagen activa del carrusel */
+                }
+  
+                .carousel-image {
+                    width: 100%;
+                    height: auto; /* Utilizamos height: auto para mantener la proporción de la imagen */
+                    max-height: 100%; /* Aseguramos que la imagen no exceda la altura del carrusel */
+                    object-fit: cover; /* Ajuste para que las imágenes se ajusten dentro del contenedor */
+                    object-position: center; /* Asegura que la imagen se muestre centrada */
+                }
+            }
+        }
+    }
   }
-.#{$brand}-card2{
-    width: 250px;
-     padding: 0;
-     border: {
-         radius: 5px;
-         width: 1px;
-         style: solid;
-         color: $secondary;
-        
- 
-     }
- img{
-     width: 100%;
-     height: 150px;
-     display: block;
- }
- &_body{
-    height: 50px;
-    text-align: center;
-    background: $secondary;
-    line-height: 50px; 
- }
- h5{
-     height: 50px;
-     line-height: 50px;
-     margin: 0;
-     color: red;
- }
- }
-/*cards finish*/
-

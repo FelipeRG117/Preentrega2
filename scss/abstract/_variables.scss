@@ -1,6 +1,15 @@
-$margin: rgba(58, 2, 187, 0.637);  
-$brand: 'tmb';
-$barras: yellow; 
-$secondary: red;  
-$dark: black;
-$dark-opacity: rgba($dark, 0.4);
+/* Variables de colores */
+:root {
+    --white: #f9f9f9;
+    --green: #229395;
+    --green-light: #7acbcd;
+    --black: #36383F;
+    --grey: #85888C;
+}
+
+$primary-color: #007bff; /* Color primario para botones */
+$secondary-color: #6c757d; /* Color secundario para botones */
+
+
+/* Estilos Generales */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
