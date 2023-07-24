@@ -1,14 +1,6 @@
 @charset "UTF-8";
 /* Estilos Generales */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-:root {
-  --white: #f9f9f9;
-  --green: #229395;
-  --green-light: #7acbcd;
-  --black: #36383F;
-  --grey: #85888C;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -17,17 +9,23 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #DA4453; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #89216B, #DA4453); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #89216B, #DA4453); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #DA4453;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #89216B, #DA4453);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #89216B, #DA4453);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /* Estilos del Header */
 .header {
-  background: #FC466B; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  box-shadow: 1px 1px 5px 0px var(--grey);
+  background: #FC466B;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3F5EFB, #FC466B);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 1px 1px 5px 0px #85888C;
   position: sticky;
   top: 0;
   width: 100%;
@@ -35,7 +33,7 @@ body {
 }
 .header .logo {
   display: inline-block;
-  color: var(--white);
+  color: #f9f9f9;
   font-size: 60px;
   margin-left: 10px;
 }
@@ -45,9 +43,12 @@ body {
   width: 100%;
   height: 100%;
   position: fixed;
-  background: #FEAC5E; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #FEAC5E;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.5s ease-out;
@@ -59,11 +60,11 @@ body {
   text-decoration: none;
   display: block;
   padding: 30px;
-  color: var(--white);
+  color: #f9f9f9;
   font-size: 16px;
 }
 .nav .menu a:hover {
-  background-color: var(--green-light);
+  background-color: #7acbcd;
   transition: background-color 0.3s ease;
 }
 
@@ -73,14 +74,14 @@ body {
   padding: 40px 20px;
 }
 .hamb .hamb-line {
-  background: var(--white);
+  background: #f9f9f9;
   display: block;
   height: 2px;
   position: relative;
   width: 24px;
 }
 .hamb .hamb-line::before, .hamb .hamb-line::after {
-  background: var(--white);
+  background: #f9f9f9;
   content: "";
   display: block;
   height: 100%;
@@ -123,7 +124,8 @@ body {
 }
 .main .carousel-container {
   width: 100%;
-  height: 500px; /* Modificación para que el carrusel tenga una altura de 500px */
+  height: 500px;
+  /* Modificación para que el carrusel tenga una altura de 500px */
   overflow: hidden;
   position: relative;
 }
@@ -132,24 +134,35 @@ body {
   height: 100%;
 }
 .main .carousel-container .carousel-inner .carousel-item {
-  display: flex; /* Usamos flexbox para centrar verticalmente las imágenes */
-  align-items: center; /* Centramos verticalmente las imágenes */
-  justify-content: center; /* Centramos horizontalmente las imágenes */
-  position: absolute; /* Ajustamos la posición de las imágenes */
+  display: flex;
+  /* Usamos flexbox para centrar verticalmente las imágenes */
+  align-items: center;
+  /* Centramos verticalmente las imágenes */
+  justify-content: center;
+  /* Centramos horizontalmente las imágenes */
+  position: absolute;
+  /* Ajustamos la posición de las imágenes */
   top: 0;
   left: 0;
-  opacity: 0; /* Ocultamos inicialmente todas las imágenes del carrusel */
-  transition: opacity 0.5s ease; /* Agregamos una transición para que el cambio de imagen sea suave */
+  opacity: 0;
+  /* Ocultamos inicialmente todas las imágenes del carrusel */
+  transition: opacity 0.5s ease;
+  /* Agregamos una transición para que el cambio de imagen sea suave */
 }
 .main .carousel-container .carousel-inner .carousel-item.active {
-  opacity: 1; /* Mostramos solo la imagen activa del carrusel */
+  opacity: 1;
+  /* Mostramos solo la imagen activa del carrusel */
 }
 .main .carousel-container .carousel-inner .carousel-item .carousel-image {
   width: 100%;
-  height: auto; /* Utilizamos height: auto para mantener la proporción de la imagen */
-  max-height: 100%; /* Aseguramos que la imagen no exceda la altura del carrusel */
-  object-fit: cover; /* Ajuste para que las imágenes se ajusten dentro del contenedor */
-  object-position: center; /* Asegura que la imagen se muestre centrada */
+  height: auto;
+  /* Utilizamos height: auto para mantener la proporción de la imagen */
+  max-height: 100%;
+  /* Aseguramos que la imagen no exceda la altura del carrusel */
+  object-fit: cover;
+  /* Ajuste para que las imágenes se ajusten dentro del contenedor */
+  object-position: center;
+  /* Asegura que la imagen se muestre centrada */
 }
 
 /* Estilos de la Barra Favoritos */
@@ -163,6 +176,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  /* Nuevas reglas para hacerla responsive */
 }
 .barra-1 ul {
   float: right;
@@ -192,8 +206,26 @@ body {
   color: rgb(0, 0, 0);
   background-color: rgb(207, 76, 142);
 }
+@media screen and (max-width: 768px) {
+  .barra-1 {
+    height: auto;
+    padding: 10px 0;
+  }
+  .barra-1 ul {
+    float: none;
+    text-align: center;
+    margin-right: 0;
+  }
+  .barra-1 ul li {
+    display: block;
+    margin: 5px 0;
+    line-height: normal;
+  }
+  .barra-1 ul a {
+    padding: 8px 15px;
+  }
+}
 
-/* Estilos de las Cards */
 /* Estilos de las Cards */
 .card {
   margin-bottom: 20px;
@@ -210,26 +242,36 @@ body {
   transform: scale(1.05);
 }
 .card .card-img-top {
-  height: 280px; /* Establecemos una altura para las imágenes en las cards */
-  object-fit: cover; /* Ajuste para que las imágenes se ajusten dentro del contenedor */
+  height: 280px;
+  /* Establecemos una altura para las imágenes en las cards */
+  object-fit: cover;
+  /* Ajuste para que las imágenes se ajusten dentro del contenedor */
 }
 .card .card-body {
-  padding: 10px; /* Ajustamos el padding para que el contenido no se vea pegado al borde de la card */
-  font-family: "Lato", sans-serif; /* Aplicamos la fuente 'Lato' al contenido de las cards */
+  padding: 10px;
+  /* Ajustamos el padding para que el contenido no se vea pegado al borde de la card */
+  font-family: "Lato", sans-serif;
+  /* Aplicamos la fuente 'Lato' al contenido de las cards */
 }
 .card .card-body h5 {
-  font-size: 25px; /* Tamaño de fuente para el título */
-  margin-bottom: 10px; /* Espaciado inferior para el título */
+  font-size: 25px;
+  /* Tamaño de fuente para el título */
+  margin-bottom: 10px;
+  /* Espaciado inferior para el título */
 }
 .card .card-body p {
-  font-size: 16px; /* Tamaño de fuente para el texto */
-  color: var(--black); /* Color del texto */
+  font-size: 16px;
+  /* Tamaño de fuente para el texto */
+  color: #36383F;
+  /* Color del texto */
 }
 
 /* Estilos Generales */
 .pie-pagina {
   width: 100%;
   background-color: black;
+  /* Estilos del Cuadro de Texto */
+
 }
 .pie-pagina .grupo-1 {
   width: 100%;
@@ -253,22 +295,22 @@ body {
   flex-direction: column;
   text-align: center;
 }
-.pie-pagina .grupo-1 figure {
+.pie-pagina .grupo-1 .box figure {
   width: 100%;
   height: 100%;
 }
-.pie-pagina .grupo-1 img {
+.pie-pagina .grupo-1 .box img {
   width: 250px;
 }
-.pie-pagina .grupo-1 h2 {
-  color: white;
+.pie-pagina .grupo-1 .box h2 {
+  color: #f9f9f9;
   margin-bottom: 25px;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
   color: #eceff1;
 }
-.pie-pagina .grupo-1 p {
-  color: white;
+.pie-pagina .grupo-1 .box p {
+  color: #f9f9f9;
   margin-bottom: 10px;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
@@ -278,69 +320,71 @@ body {
   background-color: black;
   padding: 15px 10px;
   text-align: center;
-  color: white;
+  color: #f9f9f9;
 }
 .pie-pagina .grupo-2 small {
   font-size: 15px;
 }
 .pie-pagina .map-iframe {
   width: 100%;
-  height: 100%; /* Ajustamos la altura para que ocupe el espacio del contenedor */
-  border: 0; /* Quitamos el borde para que se vea más limpio */
+  height: 100%;
+  /* Ajustamos la altura para que ocupe el espacio del contenedor */
+  border: 0;
+  /* Quitamos el borde para que se vea más limpio */
 }
 @media screen and (max-width: 800px) {
   .pie-pagina .map-iframe {
-    height: 300px; /* Reducimos la altura para pantallas más pequeñas */
+    height: 300px;
+    /* Reducimos la altura para pantallas más pequeñas */
   }
 }
-
-/* Estilos del Cuadro de Texto */
-.cuadro-formulario {
-  background: #FEAC5E; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.pie-pagina .cuadro-formulario {
+  background: #FEAC5E;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 40px 0;
 }
-
-.cuadro-formulario .cuadro-texto {
+.pie-pagina .cuadro-formulario .cuadro-texto {
   text-align: center;
   margin-bottom: 30px;
 }
-.cuadro-formulario .cuadro-texto h2 {
+.pie-pagina .cuadro-formulario .cuadro-texto h2 {
   font-size: 24px;
   font-weight: 700;
-  color: var(--green);
+  color: #229395;
   margin-bottom: 15px;
 }
-.cuadro-formulario .cuadro-texto p {
+.pie-pagina .cuadro-formulario .cuadro-texto p {
   font-size: 16px;
-  color: var(--black);
+  color: #36383F;
 }
-
-.cuadro-formulario .formulario {
+.pie-pagina .cuadro-formulario .formulario {
   max-width: 600px;
   margin: 0 auto;
 }
-.cuadro-formulario .formulario form {
+.pie-pagina .cuadro-formulario .formulario form {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.cuadro-formulario .formulario form .form-label {
+.pie-pagina .cuadro-formulario .formulario form .form-label {
   font-weight: 700;
-  color: var(--black);
+  color: #36383F;
 }
-.cuadro-formulario .formulario form .form-control {
+.pie-pagina .cuadro-formulario .formulario form .form-control {
   margin-bottom: 15px;
 }
-.cuadro-formulario .formulario form .btn-primary {
-  background-color: var(--green);
-  border-color: var(--green);
+.pie-pagina .cuadro-formulario .formulario form .btn-primary {
+  background-color: #229395;
+  border-color: #229395;
   font-weight: 700;
 }
-.cuadro-formulario .formulario form .btn-primary:hover {
-  background-color: var(--green-light);
+.pie-pagina .cuadro-formulario .formulario form .btn-primary:hover {
+  background-color: #7acbcd;
 }
 
 /*# sourceMappingURL=styles.css.map */
